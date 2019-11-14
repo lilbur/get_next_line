@@ -2,8 +2,9 @@
 
 int get_next_line(const int fd, char **line)
 {
-  while (
-  return (1);
-  if (fd == NULL)
-    return (-1);
-  return (0);
+  ssize_t     bytes;
+  char        buffer;
+  static char *ln[MAX_FD];
+  
+  bytes = read(fd, buffer, BUFF_SIZE);
+  
