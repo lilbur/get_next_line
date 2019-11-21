@@ -7,7 +7,7 @@
 typedef struct  s_list
 {
   void          *content
-  stuct s_list  *next;
+  struct s_list  *next;
 }               t_queue;
 
 int get_next_line(const int fd, char **line)
